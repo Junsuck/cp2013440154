@@ -1,15 +1,13 @@
 /////유클리드/////
 #include <stdio.h>
 int main(){
-int a,b;
-
-printf("정수 a를 입력하시오 : ");
-	scanf("%d",&a);
-printf("정수 b를 입력하시오 : ");
-	scanf("%d",&b);
-
-
-
-
-return 0;
+	int a;
+	while(1){
+		a=1;
+		while(a <= 10){
+			printf("%d\n",a);
+			a=a+1;
+		}
+	}
+	return 0;
 }

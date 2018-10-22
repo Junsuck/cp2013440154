@@ -37,43 +37,43 @@ int main() {
 	//printf("//////////////분기문///////////////////\n");
 	////키보드에서 정수를 입력받아 3의 배수 여부를 알려주는 프로그램
 	////위의 작업을 반복적으로 수행하고 사용자가 100을 입력하면 종료한다.
-	////int input ;
-	////while(1){
-	////	printf("정수를 입력하세요: ");
-	////	scanf("%d",&input);
-	////	if(input == 100) 
-	////		break;
-	////	else if(input%3 == 0)
-	////		printf("입력한 정수 %d는 3의 배수입니다\n");
-	////	else
-	////	printf("입력한 정수 %d는 3의 배수가 아닙니다\n",input);
-
-	////};
-
-	////printf("//////////////분기문///////////////////\n");
-	////	int input1 ;
-	////while(1){
-	////	printf("정수를 입력하세요: ");
-	////	scanf("%d",&input1);
-	////	if(input1 == 100) 
-	////		break;
-	////	else if(input1 >= 1000){
-	////		printf("입력한 정수가 1000보다 큽니다. 다시 입력해주세요\n");
-	////		continue;}
-	////	else if(input1%3== 0)
-	////		printf("입력한 정수 %d는 3의 배수입니다\n");
-	////	else
-	////	printf("입력한 정수 %d는 3의 배수가 아닙니다\n",input1);
+	//int input ;
+	//while(1){
+	//	printf("정수를 입력하세요: ");
+	//	scanf("%d",&input);
+	//	if(input == 100) 
+	//		break;
+	//	else if(input%3 == 0)
+	//		printf("입력한 정수 %d는 3의 배수입니다\n");
+	//	else
+	//	printf("입력한 정수 %d는 3의 배수가 아닙니다\n",input);
 
 	//};
 
-	printf("//////////////정수의 합 1부터 100까지///////////////////\n");
-	int sum = 0, i = 1;
-	while(i<=100)
-		//sum = sum + i;
-		//i++;
-		//sum = sum + i++;
-		sum += i++;
+	////printf("//////////////분기문///////////////////\n");
+		int input1 ;
+	while(1){
+		printf("정수를 입력하세요: ");
+		scanf("%d",&input1);
+		if(input1 == 100) 
+			break;
+		else if(input1 >= 1000){
+			printf("입력한 정수가 1000보다 큽니다. 다시 입력해주세요\n");
+			continue;}
+		else if(input1%3== 0)
+			printf("입력한 정수 %d는 3의 배수입니다\n",input1);
+		else
+		printf("입력한 정수 %d는 3의 배수가 아닙니다\n",input1);
+
+	};
+
+	//printf("//////////////정수의 합 1부터 100까지///////////////////\n");
+	//int sum = 0, i = 1;
+	//while(i<=100)
+	//	//sum = sum + i;
+	//		//i++;
+	//			//sum = sum + i++;
+	//				sum += i++;
 
 
 	printf("프로그램 종료!!!!!!!!!!\n");
