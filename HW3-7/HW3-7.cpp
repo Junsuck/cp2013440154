@@ -5,16 +5,19 @@
 //출력 : 베열 각 요소들의 합
 //부수효과: 없음
 int addArray(int arr[],int length){
-		int sum = 0, index = 0;
+	int sum = 0, index = 0;
 	while(index < length){
 		sum += arr[index++]; // sum = sum + a[index++]를 의미한다.
-		return sum;
+	}
+	printf("%d\n",sum);
+	return sum;
 }
 
 int main(){
 	int a[4] = {10, 20, 30 ,40};
 	int length = 4;
-	printf("%d\n",addArray(a,4));
-//당분간 이 아래는 무시하세요
+
+	addArray(a,4);
+
 	return 0;
 }

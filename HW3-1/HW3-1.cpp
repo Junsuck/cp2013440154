@@ -7,9 +7,9 @@
 //입력 : 두 정수
 //출력 : 없음
 //부수효과 : 없음
-void printNumber(int a, int b){ // (배열이름[],배열 길이)
-	int count = a;
-	while(count <=b){
+void printNumber(int x, int y){ // (배열이름[],배열 길이)
+	int count = x;
+	while(count <=y){
 		printf("%d\n", count++); ////a[count] : 변수를 index에 넣은 경우.
 	}
 }
@@ -17,10 +17,9 @@ int main() {
 
 	int a = 3, b = 50;
 	//printNumber(a,b)
-	printNumber(-20,100);
+	printNumber(a,b);
 
 	printf("end of program\n");
 
-//당분간 이 아래는 무시하세요
 	return 0;
 }
