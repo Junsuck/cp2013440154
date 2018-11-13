@@ -12,7 +12,7 @@ void printArray(int arr[], int len){
 int main() {
 	int a[3] = {10, 20, 30};//배열의 선언 : 배열이름: a, 배열길이: 3
 	int* ptr;
-	//배열의 이름만 사용하면 그 배열 첫 요소의 포인터값이 된다.
+	//배열의 이름만 사용하면 그 배열 첫 요소의 포인터값이 된다. 
 	ptr = a; //==> ptr = &a[0]
 	printf("a[0] = %d\n", a[0]);
 	printf("a[0] = %d\n", *ptr);

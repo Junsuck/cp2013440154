@@ -11,10 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B882B7BF-0F18-4DE2-8B1B-9597559274AA}</ProjectGuid>
+    <ProjectGuid>{596BFA45-3DD6-4771-B9BF-27612685B457}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My20181106pointer2</RootNamespace>
-    <ProjectName>2018.11.06 callbypointer</ProjectName>
+    <RootNamespace>My20181113arraypointer</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -77,7 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="callme.cpp" />
+    <ClCompile Include="arraypointer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
