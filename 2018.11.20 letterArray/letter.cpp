@@ -12,7 +12,7 @@ int main() {
 	printf("c=%d\n",c);
 	printf("c=%c\n",c); //%c는 character를 표시, %d는 decimal을 표시
 
-	char a[]={'h','e','l','l','o', };
+	char a[]={'h','e','l','l','o'};
 	printArray(a,5);
 
 
@@ -25,9 +25,9 @@ int main() {
 	char str1[50] = "hello";
 	char* str2 = " world";
 	strcat(str1,str2);
-	printf("%s \n", str1);
+	printf("%s\n", str1);
 	strcpy(str1,str2); //hello자리에 world가 복사됨
-	printf("%s \n", str1);
+	printf("%s\n", str1);
 
 
 	return 0;

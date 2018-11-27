@@ -13,7 +13,6 @@ void swapElement(int* arr, int i, int j){
 }
 
 void insertElement(int* arr, int ele){
-	int temp;
 	for (ele; ele != 0;ele--){
 		if(arr[ele-1]>arr[ele])
 			swapElement(arr,ele-1,ele);
@@ -25,12 +24,12 @@ void insertElement(int* arr, int ele){
 void insertionSort(int* arr, int length){
 	for( int index = 1; index < length; index++)
 		insertElement(arr,index);
-	printArray(arr,5);
+	printArray(arr,length);
 }
 
 
 int main() {
-	int a[] = {37, 42, 45, 50, 40};
+	int a[] = {37, 45, 42, 50, 40};
 	insertionSort(a,5);
 	return 0;
 }
