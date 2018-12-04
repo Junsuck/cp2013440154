@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 //구조체 선언: 기존의 데이터 타입으로 구성하여 새로운 데이터 타입을 선언한다.
 //struct complex{
 //	double real;//멤버 변수(member variable)
@@ -6,7 +7,6 @@
 //};//반드시 세미클론으로 끝내야한다.
 
 //위의 두 문장을 한문장으로 만들 수 있다.
-
 typedef struct complex {
 	double real;
 	double imag; //double 두줄을 여기다가 추가해도된다.
@@ -34,28 +34,40 @@ void convertToconjugate(Complex* ptr){
 	//허수부에 -1을 곱한다.
 	ptr -> imag = -1 * ptr->imag;
 }
-//함수 returnConjugate()
+////함수 returnConjugate() Version1 :BAD
+////입력 : 복소수 포인터
+////출력 : 복소수 변수
+////부수효과 : 없음
+//Complex* returnConjugate(Complex* ptr){
+//	Complex	temp;
+//	temp.real = ptr -> real; temp.imag = -1*ptr -> imag;
+//	return &temp;
+//}
+
+//함수 returnConjugate() Version2 :Good
 //입력 : 복소수 포인터
 //출력 : 복소수 변수
 //부수효과 : 없음
 Complex* returnConjugate(Complex* ptr){
-	Complex	temp;
-	temp.real = ptr -> real; temp.imag = -1*ptr -> imag;
-	return &temp;
+	Complex* tempPtr;                             //dynamic인 이유 : 필요할 때마다 사용할 수 있음.  malloc의 경우 프로그램 실행 상태에 따라 공간의 크기가 설정됨. -> 동적
+	tempPtr = (Complex*) malloc(sizeof(Complex)); //동적할당(dynamic Allocation) : malloc(),free() // malloc : HEAP 공간에 자료형Complex를 위한 공간이 확보됨(16byte) 
+	tempPtr -> real = ptr -> real; tempPtr -> imag = -1*ptr -> imag;
+	return tempPtr;
 }
 
 int main() {
 	myintType count = 10;//==> int count = 10; 과 같은 의미
 	//구조체 변수 선언
-	Complex a,b ;//struct complex a ; 와 같은의미  ==> 여기부터 필기 1번
+	Complex a,b ;//struct complex a ; 와 같은의미
 	//구조체 포인터 변수 선언
 	//대부분 구조체는 포인터 변수를 사용하여 접근한다.
-	Complex* ptr; //필기 1번
+	Complex* ptr; 
 	a.real = 10;//구조체변수의 멤버변수 접근방법 ==> 구조체변수이름,멤버변수이름
 	a.imag = 20;
 	printComplex(&a);
-	convertToconjugate(&a);printComplex(&a);
+	//convertToconjugate(&a);printComplex(&a);
 	ptr = returnConjugate(&a); printComplex(ptr);
+	free(ptr);printComplex(ptr);
 
 
 	ptr = &a;
