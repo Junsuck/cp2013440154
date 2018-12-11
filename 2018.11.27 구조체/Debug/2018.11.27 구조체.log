@@ -1,12 +1,15 @@
-﻿빌드 시작: 2018-12-04 오후 2:54:04
+﻿빌드 시작: 2018-12-09 오전 12:18:07
      1>2 노드의 "C:\Users\허준석\Desktop\C 언어\2013440154허준석\2018.11.27 구조체\2018.11.27 구조체.vcxproj" 프로젝트(Build 대상)입니다.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "구조체.cpp"
          구조체.cpp
-     1>c:\users\허준석\desktop\c 언어\2013440154허준석\2018.11.27 구조체\구조체.cpp(58): error C2664: 'printComplex' : 매개 변수 1을(를) 'Complex'에서 'Complex *'(으)로 변환할 수 없습니다.
-                 이 변환을 수행할 수 있는 사용 가능한 사용자 정의 변환 연산자가 없거나 연산자를 호출할 수 없습니다.
-     1>"C:\Users\허준석\Desktop\C 언어\2013440154허준석\2018.11.27 구조체\2018.11.27 구조체.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+     1>c:\users\허준석\desktop\c 언어\2013440154허준석\2018.11.27 구조체\구조체.cpp(44): warning C4172: 지역 변수 또는 임시 변수의 주소를 반환하고 있습니다.
+     1>c:\users\허준석\desktop\c 언어\2013440154허준석\2018.11.27 구조체\구조체.cpp(50): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\허준석\Desktop\C 언어\2013440154허준석\Debug\2018.11.27 구조체.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\허준석\Desktop\C 언어\2013440154허준석\Debug\2018.11.27 구조체.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\허준석\Desktop\C 언어\2013440154허준석\Debug\2018.11.27 구조체.lib" /MACHINE:X86 "Debug\구조체.obj"
+         2018.11.27 구조체.vcxproj -> C:\Users\허준석\Desktop\C 언어\2013440154허준석\Debug\2018.11.27 구조체.exe
+     1>"C:\Users\허준석\Desktop\C 언어\2013440154허준석\2018.11.27 구조체\2018.11.27 구조체.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
-빌드하지 못했습니다.
+빌드했습니다.
 
-경과 시간: 00:00:00.23
+경과 시간: 00:00:01.90

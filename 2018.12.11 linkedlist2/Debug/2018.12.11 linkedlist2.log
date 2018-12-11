@@ -1,0 +1,11 @@
+﻿빌드 시작: 2018-12-11 오후 4:34:08
+     1>2 노드의 "C:\Users\허준석\Desktop\C 언어\2013440154허준석\2018.12.11 linkedlist2\2018.12.11 linkedlist2.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "last class.cpp"
+         last class.cpp
+     1>c:\users\허준석\desktop\c 언어\2013440154허준석\2018.12.11 linkedlist2\last class.cpp(45): error C3861: 'returnTail': 식별자를 찾을 수 없습니다.
+     1>"C:\Users\허준석\Desktop\C 언어\2013440154허준석\2018.12.11 linkedlist2\2018.12.11 linkedlist2.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.24

@@ -29,6 +29,18 @@ Node* creatNode(int input){
 	return ptr;
 }
 
+double averageLL(Node* ptr){
+	int sum = 0, count = 0;
+	double average;
+	while(ptr != NULL){
+		sum += ptr -> score;
+		count++;
+		ptr = ptr -> pNext;
+	}
+	average = (double)sum / count;
+	return average;
+}
+
 //함수 addHead() 
 //입력: 연결리스트, 새 노드
 //출력: 없음
@@ -46,6 +58,12 @@ Node* creatNode(int input){
 void addHead(Node** ppHead, Node* pNewNode){
 	pNewNode -> pNext = *ppHead; //34
 	*ppHead = pNewNode; //35
+}
+
+int main(){
+	double test;
+	test = 10/4;
+	printf("test = %f\n",test);
 }
 
 int main() {
